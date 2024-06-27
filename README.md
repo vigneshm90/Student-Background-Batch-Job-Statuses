@@ -19,9 +19,9 @@ Please follow the link for importing the collection in postman for refernce : [I
 - username   - Username to access the API 
 - password   - Password to access the API 
 - domain - Domain name of the Student
-- batchId  -  Campus associated with the bank account
-- batchType  - Bank account associatied with campus
-- batchStatusId - Bank Account Id
-- jobStatusId - active status
+- batchId  -  Batch id associated with student background batch
+- batchType  - Batch type associated with student background batch
+- batchStatusId - Batch Status Id
+- jobStatusId - Job Status Id
 
 
