@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "fcd540dc-821c-4569-82e8-64440d2d1588",
+		"name": "Background Batch/Job Statuses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32629573"
+	},
+	"item": [
+		{
+			"name": "GetBackgroundBatches",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{username}}",
+						"password": "{{password}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://{{domain}}/ds/campusnexus/BackgroundBatches"
+			},
+			"response": []
+		},
+		{
+			"name": "GetBackgroundBatchesById",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{username}}",
+						"password": "{{password}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://{{domain}}/ds/campusnexus/BackgroundBatches('{{batchId}}')"
+			},
+			"response": []
+		},
+		{
+			"name": "GetBackgroundBatchesByType",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{username}}",
+						"password": "{{password}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://{{domain}}/ds/campusnexus/BackgroundBatches/CampusNexus.GetByBatchType(batchType='{{batchType}}')"
+			},
+			"response": []
+		},
+		{
+			"name": "BackgroundBatchStatuses",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{username}}",
+						"password": "{{password}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://{{domain}}/ds/campusnexus/BackgroundBatchStatuses"
+			},
+			"response": []
+		},
+		{
+			"name": "BackgroundBatchStatusesById",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{username}}",
+						"password": "{{password}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://{{domain}}/ds/campusnexus/BackgroundBatchStatuses({{batchStatusId}})"
+			},
+			"response": []
+		},
+		{
+			"name": "BackgroundJobStatuses",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{username}}",
+						"password": "{{password}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://{{domain}}/ds/campusnexus/BackgroundBatchStatuses(5350)"
+			},
+			"response": []
+		},
+		{
+			"name": "BackgroundJobStatusesById",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{username}}",
+						"password": "{{password}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://{{domain}}/ds/campusnexus/BackgroundBatchStatuses({{batchStatusId}})"
+			},
+			"response": []
+		},
+		{
+			"name": "GetEachJobResult",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{username}}",
+						"password": "{{password}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://{{domain}}/ds/campusnexus/BackgroundJobStatuses/CampusNexus.GetEchoJobResults"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "username",
+			"value": "$username",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "$password",
+			"type": "string"
+		},
+		{
+			"key": "domain",
+			"value": "sisclientweb-700031.campusnexus.cloud",
+			"type": "string"
+		},
+		{
+			"key": "batchId",
+			"value": "$batchId",
+			"type": "string"
+		},
+		{
+			"key": "batchType",
+			"value": "$batchType",
+			"type": "string"
+		},
+		{
+			"key": "batchStatusId",
+			"value": "$batchStatusId",
+			"type": "string"
+		},
+		{
+			"key": "jobStatusId",
+			"value": "$jobStatusId",
+			"type": "string"
+		}
+	]
+}
